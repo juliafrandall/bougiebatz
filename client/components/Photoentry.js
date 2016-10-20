@@ -2,12 +2,12 @@ import React from 'react'
 
 //creating template f
 
-var PhotoEntry = ({photos, handleSearchParamChange}) => (
+var PhotoEntry = ({photos}) => (
 	<div className="smallPhotos"> 
 	{photos.map((photo, i) =>
      <div key={i}>
        <a href={photo.url}>
-         <img className="smallPhotoItem" src={photo.multimedia[2].url} />
+         <img className="smallPhotoItem" src={photo.urlToImage} />
        </a>
     </div>
    )}

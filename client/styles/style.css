@@ -13,7 +13,6 @@ ul.header {
 	text-align: center;
 }
 
-}
 .links {
   display: block;
   float: left;
@@ -97,7 +96,7 @@ div .largePhoto {
 
 div .select {
 	position:absolute;
-	left:3px;
+	left:1%;
 	/*float:left;*/
 	width:10%
 }

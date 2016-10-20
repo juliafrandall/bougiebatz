@@ -14,31 +14,32 @@ class Small extends React.Component {
 		super(props)
 			this.state = {
 				photos: [],
-				searchParams: {
-					source: 'all',
-					section: 'all',
-					time: '168',
-					limit: 50,
-					offest: '40'
-				}
+				// searchParams: {
+				// 	source: 'all',
+				// 	section: 'all',
+				// 	time: '168',
+				// 	limit: 50,
+				// 	offest: '40'
+				// }
 			}
 	}
 
-	getPhotos(source, section, time, limit) {
-		axios.get('api/Large', {
-			params: {
-				source: 'all',
-				section:'all',
-				time: '168',
-				limit: 50,
-				offset: '50'
-			}
+	getPhotos() {
+		axios.get('api/Small', {
+			// params: {
+			// 	source: 'all',
+			// 	section:'all',
+			// 	time: '168',
+			// 	limit: 50,
+			// 	offset: '50'
+			// }
 		})
-		.then((response )=>{
-			var multimediaPhotos = response.data.results
-        .filter((photo) => photo.multimedia.length === 4 )
-        .splice(0,50)
+		.then((response)=>{
+			var multimediaPhotos = response.data.articles
+			console.log(multimediaPhotos);
 
+
+       
       this.setState({
         photos: multimediaPhotos
       })
