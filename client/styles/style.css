@@ -10,15 +10,13 @@ ul.header {
   margin: 15px;
   overflow: hidden;
   list-style-type: none;
-}
+  text-align: center;
 
-.links:hover {
-	color:white;
 }
-
 .links {
   display: block;
   float: left;
+  /*margin: 0 2.50em;*/
   color: white;
   font-size: 20px;
   font-family: georgia, serif;
@@ -27,13 +25,9 @@ ul.header {
   padding: 10px 12px;
 }
 .newsLink {
-  /*display: block;
-  float: left;*/
   color: white;
   font-size: 40px;
   font-family: georgia, serif;
-  /*text-decoration: none;*/
-  /*text-align: center;*/
   padding: 10px 12px;
 }
 
