@@ -20,7 +20,7 @@ app.use('/api', newsRoutes);
 
 // app.use('/api', userRoutes);
 
-
+//
 // webpack loads index.html, looks for script src
 app.get('/public/bundle.js', function(req, res){
   res.sendFile(path.join(__dirname, 'client/public/bundle.js'));
