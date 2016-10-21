@@ -1,34 +1,89 @@
 
 h1 {
-	font-family: georgia, serif;
+	font-family: avenir;
   color: black;
 }
 
+#background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
 ul.header {
-  background-color: #111;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.7);
   padding: 0;
   margin: 15px;
   overflow: hidden;
   list-style-type: none;
-	text-align: center;
+}
+
+.links:visited {
+  color:white;
+}
+
+.newsLink:hover {
+	color:white;
+}
+
+.newsLink:visited {
+  color:white;
 }
 
 .links {
   display: block;
   float: left;
-  /*margin: 0 2.50em;*/
-  color: white;
+  color: black;
   font-size: 20px;
-  font-family: georgia, serif;
+  font-family: avenir;
   text-decoration: none;
   text-align: center;
   padding: 10px 12px;
 }
+
 .newsLink {
   color: white;
   font-size: 40px;
-  font-family: georgia, serif;
+  font-family: avenir;
+  /*text-decoration: none;*/
+  /*text-align: center;*
   padding: 10px 12px;
+}
+
+.medium-photos {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+
+ -webkit-flex-flow: row wrap;
+ justify-content: space-around;
+}
+
+.medium-item {
+  background: white;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
 }
 
 .smallPhotos {
@@ -49,8 +104,17 @@ ul.header {
 .smallPhotoItem { transition: all .1s ease-in-out; }
 .smallPhotoItem:hover { transform: scale(2.4); }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.4); }
+.grow {
+	transition: all .3s ease-in-out;
+}
+.grow:hover {
+	 transform: scale(1.6);
+	 z-index: 1;
+	 border-radius: 10px;
+	 border-color: white;
+	 border-width: thick;
+
+}
 
 * {
   -moz-box-sizing: border-box;
@@ -96,7 +160,7 @@ div .largePhoto {
 
 div .select {
 	position:absolute;
-	left:1%;
+	left:2%;
 	/*float:left;*/
 	width:10%
 }
