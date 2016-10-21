@@ -32,6 +32,7 @@ ul.header {
   color:white;
 }
 
+<<<<<<< 1a386d71ace37eb23e38cacc03fea811e483d0a4
 .links:visited {
   color:white;
 }
@@ -44,6 +45,8 @@ ul.header {
   color:white;
 }
 
+=======
+>>>>>>> updating api calls
 .links {
   display: block;
   float: left;
