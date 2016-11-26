@@ -13,9 +13,9 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-var newsRoutes = require('./server/routes/newsRoutes');
+var newsRoutes = require('./routes/newsRoutes');
 // var userRoutes = require('./server/routes/userRoutes');
-var articleRoutes = require('./server/routes/articleRoutes')
+var articleRoutes = require('./routes/articleRoutes')
 
 app.use('/api', newsRoutes);
 
@@ -25,16 +25,16 @@ app.use('/api', articleRoutes)
 
 // webpack loads index.html, looks for script src
 app.get('/public/bundle.js', function(req, res){
-  res.sendFile(path.join(__dirname, 'client/public/bundle.js'));
+  res.sendFile(path.join(__dirname, '../client/public/bundle.js'));
 });
 
 app.get('/styles/style.css', function(req, res){
-  res.sendFile(path.join(__dirname, 'client/styles/style.css'));
+  res.sendFile(path.join(__dirname, '../client/styles/style.css'));
 });
 
 app.get('*', function(req, res){
   console.log('REQ.URL IS: ', req.url);
-  res.sendFile(path.join(__dirname, 'client/index.html'));
+  res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
 app.listen(process.env.PORT || 9000);

@@ -107,7 +107,9 @@ class Large extends React.Component {
         }
     })
     .then((response) => {
+      console.log(response, "RES++++++++++++");
       var multimediaPhotos = response.data.results
+      // var multimediaPhotos = response.response.docs //for the alternative api endpoint which no longer works
         .filter((photo) => photo.multimedia.length === 4);
         // .splice(0,4)
       //there was a problem because some articles multimedia is ''
