@@ -1,4 +1,4 @@
-# Project Name #
+# Visual News #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,38 +16,30 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-Visual News
-
-
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-Visually choose your news, and judge an article by its photo.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-People have long judged books by their covers. The time has come to judge articles by their photos. Visual News provides a stimulating and interactive display of images to represent recent news stories.
+  <!-- > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good. -->
+> People have long judged books by their covers. The time has come to judge articles by their photos. Visual News provides a stimulating and interactive display of images to represent recent news stories.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  <!-- > Describe the problem your product solves. -->
 > Short attention spans make traditional text based news sites unpleasant to interact with.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  <!-- > Describe how your product elegantly solves the problem. -->
 > Visual News takes top headlines from major news sources and transforms them into images whose size conveys  when the story was published. This creates an interactive and lively display in the process.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  <!-- > A quote from a spokesperson in your company. -->
 > "Visual News is a site for the visually minded. The vast majority of news sites take after the newspaper in terms of form and content with titles and abstracts. We turn tradition on its head and give users an image to interact with."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  <!-- > Describe how easy it is to get started. -->
+> download
+> npm install
+> npm build
 > npm start
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  <!-- > Provide a quote from a hypothetical customer that describes how they experienced the benefit. -->
 > "I loved the visual display. The site was intuitive with the larger and smaller images. The site made browsing and choosing articles fun!"
-
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.

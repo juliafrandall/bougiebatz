@@ -2,12 +2,12 @@
   "name": "bougiebatz",
   "version": "1.0.0",
   "description": "visual news application",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "nodemon server/server.js",
     "build": "webpack -p",
-    "dev": "webpack -d --watch",
+    "dev": "webpack -w",
     "webpack": "webpack --progress --colors --watch"
   },
   "repository": {

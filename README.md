@@ -1,3 +1,4 @@
+
   ## Team
   Product Owner: Samantha Gowda
   Scrum Master: Jake Smith
@@ -10,62 +11,29 @@
   #####[Visit the app](http://bougiebats.herokuapp.com/home)
 
   ## Tech Stack
-  ![Tech Stack]()
+  - React, Node, Express, MongoDB
 
   ## Architecture
   ![Architecture]()
 
   ## Features
   - General Features
-    - User authentication for two user types: recruiters and applicants
-    - RESTful API
-    - Postgres relational database
-  - Applicant Features
-    - Browse posted jobs
-      - Filter available jobs by keyword
-    - Apply to jobs
-    - Update already-sent applications
-  - Recruiter Features
-    - Recruiter dashboard
-    - Post new jobs
-    - Browse applicants by job
-        - Filter by new, interested, or rejected applicants
-    - Contact applicants
+    - View the new from the past day, week, and month in different image sizes.
+    - Search for news by section.
+    - Save your favorite articles.
 
   ## Setup
   During development we have the server running on localhost port 8000, but before running locally, be sure to run:
-  - `npm install` to install our dependencies
-  - `npm install gulp -g` to make sure gulp is installed
-  - `gulp start` to build the dist/ folder, start the server with nodemon, and to watch files for changes
+    - npm install
+    - npm build
+    - npm start
 
-  We used the [dotenv](https://github.com/bkeepers/dotenv) npm package to configure our development variables. Create a .env file in the root directory with the following variables and their values:
-  - DATABASE_URL
-  - DEV_DATABASE_URL
-  - JWT_SECRET
-  - MAILGUN_API_KEY
-  - MAILGUN_DOMAIN
 
   ## Contributing
   Please refer to the [CONTRIBUTING.md](docs/CONTRIBUTING.md) file to see how to contribute to our project.
 
   ## Style Guide
   Please refer to the [STYLE-GUIDE.md](docs/STYLE-GUIDE.md) file to see our style guide.
-
-  ## Testing
-  For client-side testing we used mocha and chai, and for server-side testing we used mocha and chai along with [supertest](https://github.com/visionmedia/supertest). To run all tests run:
-  ```
-  gulp tests
-  ```
-  For server-side tests only, run:
-  ```
-  gulp serverTest
-  ```
-  For client-side tests only, run:
-  ```
-  gulp clientTest
-  ```
-  ## Styling
-  All of our files and images used for styling are located in the `client/assets/` directory. If gulp is not already running, run gulp to copy images and compile scss into the `dist/` folder.
 
   ## Team
   We are a team of 4 full-stack software engineers. If you have any questions, please feel free to contact us!
@@ -78,3 +46,16 @@
   [Navkiran Ghuman](https://www.linkedin.com/in/navkiranghuman) | [Github](https://github.com/nghuman)
 
   [Julia Randall](https://www.linkedin.com/in/juliafrandall) | [Github](https://github.com/juliafrandall)
+
+
+  ## Application:
+  - Client:
+    - Components folder: contains all of the React components
+    - public: contains the compiled bundle.js
+    - Styles: contains css styling
+  - Server:
+    - Server.js: Express and Node server
+    - db.js: connects to mLabs mongoDB on Heroku
+    - models: contains mongoose models for the database
+    - routes: contains routes for users, articles and news
+  - webpack.config.js: compiles js into bundle.js in public directory
