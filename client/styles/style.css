@@ -1,7 +1,8 @@
-
 h1 {
-	font-family: avenir;
+  font-family: avenir;
   color: black;
+  text-indent: 2%;
+  font-size: 1.5em;
 }
 
 #background-video {
@@ -23,23 +24,26 @@ ul.header {
   margin: 15px;
   overflow: hidden;
   list-style-type: none;
+  text-align: center;
+  border-radius: 10px;
 }
 
-<<<<<<< 9fab028a4407cd2b4ade72b8cbe734daa3e6fc46
+.links:hover {
+  color:white;
+}
+
 .links:visited {
   color:white;
 }
 
 .newsLink:hover {
-	color:white;
+  color:white;
 }
 
 .newsLink:visited {
   color:white;
 }
 
-=======
->>>>>>> updating api calls
 .links {
   display: block;
   float: left;
@@ -50,13 +54,14 @@ ul.header {
   text-align: center;
   padding: 10px 12px;
 }
-
 .newsLink {
+  /*display: block;
+  float: left;*/
   color: white;
   font-size: 40px;
   font-family: avenir;
   /*text-decoration: none;*/
-  /*text-align: center;*
+  /*text-align: center;*/
   padding: 10px 12px;
 }
 
@@ -64,23 +69,24 @@ ul.header {
  padding: 0;
  margin: 0;
  list-style: none;
-
+justify-content: center;
  display: -webkit-box;
  display: -moz-box;
  display: -ms-flexbox;
  display: -webkit-flex;
  display: flex;
-
+/*margin:5px;*/
  -webkit-flex-flow: row wrap;
- justify-content: space-around;
+ /*justify-content: space-between;*/
 }
 
 .medium-item {
   background: white;
   padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
+  width: 300px;
+  height: 200px;
+  /*margin-top: 10px;*/
+  margin: 12px;
 
   line-height: 150px;
   color: white;
@@ -89,9 +95,12 @@ ul.header {
   text-align: center;
 }
 
+.medium-item:hover { transform: scale(1.3); }
+.medium-item { transition: all .3s ease-in-out; }
+
 .smallPhotos {
- padding: 0;
- margin: 0;
+ padding:0;
+ margin: 5px;
  list-style: none;
  display: flex;
  justify-content: center;
@@ -100,22 +109,23 @@ ul.header {
 
 .smallPhotoItem {
  background: white;
- padding: 1px;
- width: 90px;
- height: 80px;
+ padding: 2px;
+ margin: 5px;
+ width: 150px;
+ height: 100px;
 }
 .smallPhotoItem { transition: all .1s ease-in-out; }
 .smallPhotoItem:hover { transform: scale(2.4); }
 
 .grow {
-	transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .grow:hover {
-	 transform: scale(1.6);
-	 z-index: 1;
-	 border-radius: 10px;
-	 border-color: white;
-	 border-width: thick;
+   transform: scale(1.2);
+   z-index: 1;
+   border-radius: 10px;
+   border-color: white;
+   border-width: thick;
 
 }
 
@@ -149,29 +159,120 @@ ul.header {
 }
 /*container for large photos*/
 div .largePhotos {
-	padding: 3px;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /*individual large photo div*/
 div .largePhoto {
-	padding-left:5px;
-	padding-right: 5px;
+  padding-left:5px;
+  padding-right: 5px;
 }
 
 div .select {
-	position:absolute;
-<<<<<<< 9fab028a4407cd2b4ade72b8cbe734daa3e6fc46
-	left:2%;
-=======
-	left:1%;
->>>>>>> updating api calls
-	/*float:left;*/
-	width:10%
+  position:absolute;
+  left:2%;
+  /*float:left;*/
+  width:10%
 }
 /*search bar for Large Photos*/
 div input {
   width: 75%;
+}
+
+/*nect three css things are for images in Largephotos*/
+.show:hover + .reveal {
+  display:block;
+}
+/*.show:hover {
+  opacity:0.8;
+}*/
+
+/*.show:focus + .reveal {
+display:block;
+}*/
+/*.show:focus {
+  opacity:0.9;
+}*/
+
+.reveal {
+  display: none;
+  position: fixed;
+  width: 10%;
+  height: auto;
+  z-index: 10;
+  line-height: 100%;
+  top: 30%;
+  left: 1%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  text-align: left;
+  line-height:1.3;
+  word-wrap: normal;
+  border-style: solid;
+  border-width: 2px;
+  border-color:black;
+  padding: 5px;
+  margin: 5px;
+  font-family: courier;
+  color:black;
+}
+
+.show {
+  transition: all .3s ease-in-out;
+  padding: 3px;
+  margin-top: 4px;
+}
+div .show:hover {
+   transform: scale(1.05);
+   z-index: 1;
+   border-radius: 10px;
+   border-color: white;
+   border-width: thick;
+}
+.showImg {
+  padding: 3px;
+  margin-top: 4px;
+  border-radius: 10px;
+}
+
+.savedContainer {
+  display: flex;
+  justify-content:space-between;
+  flex-direction:row wrap;
+  overflow: scroll;
+}
+
+.saved {
+  padding:5px;
+}
+.savedImg {
+  border-radius: 12px;
+}
+
+.showCount:hover + .revealCount {
+  display:block;
+}
+.revealCount {
+  display: none;
+  position: fixed;
+  width: 10%;
+  height: auto;
+  z-index: 10;
+  line-height: 100%;
+  top: 77%;
+  left: 40%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  text-align: center;
+  word-wrap: normal;
+  border-style: dashed;;
+  border-width: 2px;
+  border-color:grey;
+  padding: 5px;
+  margin: 5px;
 }
