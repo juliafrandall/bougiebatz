@@ -25,6 +25,7 @@ ul.header {
   list-style-type: none;
 }
 
+<<<<<<< 9fab028a4407cd2b4ade72b8cbe734daa3e6fc46
 .links:visited {
   color:white;
 }
@@ -37,6 +38,8 @@ ul.header {
   color:white;
 }
 
+=======
+>>>>>>> updating api calls
 .links {
   display: block;
   float: left;
@@ -160,7 +163,11 @@ div .largePhoto {
 
 div .select {
 	position:absolute;
+<<<<<<< 9fab028a4407cd2b4ade72b8cbe734daa3e6fc46
 	left:2%;
+=======
+	left:1%;
+>>>>>>> updating api calls
 	/*float:left;*/
 	width:10%
 }
