@@ -87,6 +87,49 @@ router.get('/Small', (req, res) => {
 });
 
 
+// router.get('/Small', cnn, bbc)
+// router.get('/Small', cnn, bbc)
+
+// function cnn(req, res, next){
+//   var reqUrl = 'https://newsapi.org/v1/articles?source=cnn&apiKey=ab9d628ffe444969a76c1cd38d253bb9'
+//   var options = { method: 'GET',
+//     url: reqUrl
+//   }
+//   request(options, (error, response, body) => {
+//     if (error) throw new Error(error);
+//     res.send(body);
+//   });
+//   next();
+// } 
+
+// function bbc(req, res, next){
+//   var reqUrl = 'https://newsapi.org/v1/articles?source=bbc-news&apiKey=ab9d628ffe444969a76c1cd38d253bb9'
+//   var options = { method: 'GET',
+//     url: reqUrl
+//   }
+//   request(options, (error, response, body) => {
+//     if (error) throw new Error(error);
+//     res.send(body);
+//   });
+//   next();
+// } 
+
+// // router.get('/Small', cnn)
+
+
+
+router.get('/Small', (req, res) => {
+  var reqUrl = 'https://newsapi.org/v1/articles?source=cnn&apiKey=ab9d628ffe444969a76c1cd38d253bb9'
+  var options = { method: 'GET',
+    url: reqUrl
+  };
+  request(options, (error, response, body) => {
+    if (error) throw new Error(error);
+    res.send(body);
+  });
+});
+
+
 
 
 //for url in request:
